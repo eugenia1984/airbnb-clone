@@ -47,6 +47,10 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - Prisma
 
+- [Naxt-Auth](https://next-auth.js.org/), install in the command line with: `npm install next-auth @prisma/client @next-auth/prima-adapter` if we are using the RPisma version 4 we will need the prisma adapter
+
+- [Bcrypt](https://www.npmjs.com/package/bcrypt) and add `npm install -D @types/bcrypt` to add types
+
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-eslint-pluggable-and-configurable-linter-tool-for-identifying-and-reporting-on-patterns-in-javascript-logo-color-tal-revivo.png" alt="eslint pluggable and configurable linter tool for identifying and reporting on patterns in javascript"/> ESLint](https://eslint.org/)
 
 - [React icons](https://react-icons.github.io/react-icons/)
@@ -69,9 +73,12 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 `npx prisma init` -> to start Prisma and create an schema
 
 Next steps:
-1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+
+1. Set the DATABASE_URL in the **.env** file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
 
 2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+
+In my case is a **mongoDB atlas**, and after all the schemma run: `npm prisma db push`
 
 3. Run prisma db pull to turn your database schema into a Prisma schema.
 
