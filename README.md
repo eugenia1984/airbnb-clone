@@ -51,6 +51,12 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [React icons](https://react-icons.github.io/react-icons/)
 
+- [zustand](https://zustand-demo.pmnd.rs/)
+
+- [axios](https://axios-http.com/docs/intro)
+
+- [react-hook-form](https://www.react-hook-form.com/)
+
 ---
 ---
 
