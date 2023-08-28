@@ -5,16 +5,6 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ---
 
-## Table of Contents
-
-- Demo 📦
-- Features 📢
-- Technologies 🛠️
-- Getting Started
-- Notes
-
----
-
 ## Demo 📦
 
 📌 (bulding...)
