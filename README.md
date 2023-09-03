@@ -1,4 +1,4 @@
-# :star: Full Stack Airbnb Clone 
+# <img width="30" height="30" src="https://img.icons8.com/color/30/airbnb.png" alt="airbnb"/> Full Stack Airbnb Clone 
 
 This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating an **Airbnb** clone.
 
@@ -13,7 +13,11 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ## Features 📢
 
-✔️ Login
+✔️ Login with e-mail and password, or Google or GitHub
+
+✔️ 
+
+✔️ 
 
 ✔️ 
 
@@ -24,7 +28,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/plasticine/30/react.png" alt="react"/> React](https://react.dev/)
 
-- [React-DOM](https://www.npmjs.com/package/react-dom)
+- [<img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> React-DOM](https://www.npmjs.com/package/react-dom)
 
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> Nextjs](https://nextjs.org/)
 
@@ -35,9 +39,9 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> Tailwindcss](https://tailwindcss.com/) (PostCSS)
 
-- Prisma
+- [Prisma](https://www.prisma.io/)
 
-- [Naxt-Auth](https://next-auth.js.org/), install in the command line with: `npm install next-auth @prisma/client @next-auth/prima-adapter` if we are using the RPisma version 4 we will need the prisma adapter
+- [Next-Auth](https://next-auth.js.org/), install in the command line with: `npm install next-auth @prisma/client @next-auth/prima-adapter` if we are using the Prisma version 4 we will need the prisma adapter
 
 - [Bcrypt](https://www.npmjs.com/package/bcrypt) and add `npm install -D @types/bcrypt` to add types
 
@@ -49,14 +53,49 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [axios](https://axios-http.com/docs/intro)
 
-- [react-hook-form](https://www.react-hook-form.com/)
+- [<img width="30" height="30" src="https://img.icons8.com/dusk/30/form.png" alt="form"/> react-hook-form](https://www.react-hook-form.com/)
 
-- [react-hot-toast](https://react-hot-toast.com/)
+- [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
+
 
 ---
 ---
 
-### Commands
+## <img width="30" height="30" src="https://img.icons8.com/nolan/30/todo-list.png" alt="todo-list"/> Prerequisites
+
+- Node version 14.x
+
+- Cloning the repository: ``git clone https://github.com/eugenia1984/airbnb-clone.git``
+
+- Install packages: ``npm i`` or ``npm install``
+
+- Setup .env file:
+
+```
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_SECRET=
+```
+
+- Setup Prisma: ``npx prisma db push``
+
+- Start the app: ``npm run dev``
+
+- Available commands: Running commands with npm npm run [command]
+
+| command	| description |
+| ------- | ----------- |
+| ``dev`` |	Starts a development instance of the app |
+
+
+
+---
+---
+
+### <img width="30" height="30" src="https://img.icons8.com/color/30/command-line.png" alt="command-line"/> Commands
 
 `npm run dev` -> to rund the Next application
 
@@ -78,21 +117,18 @@ More information in our documentation: [https://pris.ly/d/getting-started](https
 
 
 ---
-### Getting Started
 
-After clonining the GitHub repository and install all the dependencies with `npm install`.
+### <img width="30" height="30" src="https://img.icons8.com/dusk/30/workstation.png" alt="workstation"/>  Getting Started
 
-Run the development server:
+After clonining the GitHub repository and install all the dependencies with `npm install` or `npm i`.
 
-```bash
-npm run dev
-```
+Run the development server: `npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### Learn More
+### <img width="30" height="30" src="https://img.icons8.com/color/30/book.png" alt="book"/> Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -112,7 +148,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ---
 ---
 
-## Notes
+## <img width="30" height="30" src="https://img.icons8.com/dusk/30/apple-notes.png" alt="apple-notes"/> Notes
 
 I appreciate your interest in this Project ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
+
+---
 
