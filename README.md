@@ -37,12 +37,12 @@ name: euge
 
 - [<img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> React-DOM](https://www.npmjs.com/package/react-dom)
 
+- query-string
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> Nextjs](https://nextjs.org/)
 
 - [Next-Auth](https://www.npmjs.com/package/next-auth)
 
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/> MongoDB Atlas](https://www.mongodb.com/atlas/database)
-
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> Tailwindcss](https://tailwindcss.com/) (PostCSS)
 
@@ -63,6 +63,7 @@ name: euge
 - [<img width="30" height="30" src="https://img.icons8.com/dusk/30/form.png" alt="form"/> react-hook-form](https://www.react-hook-form.com/)
 
 - [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
+
 
 
 ---
