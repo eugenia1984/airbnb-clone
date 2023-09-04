@@ -19,7 +19,8 @@ const CategoryInput: React.FC<CategoryInputProps> = ({
       className={ `
         rounded-xl
         border-2
-        p-4flex
+        p-4
+        flex
         flex-col
         gap-3
         hover:border-black
@@ -29,7 +30,10 @@ const CategoryInput: React.FC<CategoryInputProps> = ({
       `}
       onClick={ () => onClick(label) }
     >
-
+      <Icon size={30}/>
+      <div className="font-semibold">
+        {label}
+      </div>
     </div>
   )
 }

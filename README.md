@@ -37,7 +37,21 @@ name: euge
 
 - [<img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> React-DOM](https://www.npmjs.com/package/react-dom)
 
+- [<img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> React icons](https://react-icons.github.io/react-icons/)
+
+- <img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/>  react-select
+
+- [<img width="30" height="30" src="https://img.icons8.com/dusk/30/form.png" alt="form"/> react-hook-form](https://www.react-hook-form.com/)
+
+- [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
+
+
+- <img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> react-leaflet
+
+- leaflet
+
 - query-string
+
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> Nextjs](https://nextjs.org/)
 
 - [Next-Auth](https://www.npmjs.com/package/next-auth)
@@ -54,17 +68,13 @@ name: euge
 
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-eslint-pluggable-and-configurable-linter-tool-for-identifying-and-reporting-on-patterns-in-javascript-logo-color-tal-revivo.png" alt="eslint pluggable and configurable linter tool for identifying and reporting on patterns in javascript"/> ESLint](https://eslint.org/)
 
-- [React icons](https://react-icons.github.io/react-icons/)
-
 - [zustand](https://zustand-demo.pmnd.rs/)
 
 - [axios](https://axios-http.com/docs/intro)
 
-- [<img width="30" height="30" src="https://img.icons8.com/dusk/30/form.png" alt="form"/> react-hook-form](https://www.react-hook-form.com/)
+- world-countries
 
-- [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
-
-
+- next-cloudinary, to store the images
 
 ---
 ---
