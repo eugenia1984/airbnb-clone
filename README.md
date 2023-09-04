@@ -2,6 +2,11 @@
 
 This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating an **Airbnb** clone.
 
+### To try the login:
+
+user: costamariaeugenia11@gmail.com
+pas: 123456
+name: euge
 
 ---
 
@@ -13,11 +18,11 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ## Features 📢
 
-✔️ Login with e-mail and password, or Google or GitHub
+✔️ Login with e-mail and password, or Google or GitHub. Credential authentication. Google authentication. Github authentication
 
-✔️ 
+✔️ Tailwind design. Tailwind animations and effects
 
-✔️ 
+✔️ Full responsiveness
 
 ✔️ 
 
