@@ -45,7 +45,6 @@ name: euge
 
 - [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
 
-
 - <img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> react-leaflet
 
 - leaflet
