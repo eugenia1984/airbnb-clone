@@ -1,4 +1,4 @@
-#  Full Stack Trello clone Wiki!
+#  <img width="40" height="40" src="https://img.icons8.com/color/40/trello.png" alt="trello"/> Full Stack Trello clone Wiki!
 
 This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating a **Trello** clone.
 
@@ -14,18 +14,43 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 ## Features 📢
 
 
-✔️ Tailwind design. Tailwind animations and effects
+✔️ TailwindCSS and shadcnUI design. Tailwind animations and effects.
 
 ✔️ Full responsiveness
 
 ✔️ Landing page
+
+✔️ Auth
+
+✔️ Organizations / Workspaces
+
+✔️ Board creation
+
+✔️ Unsplash API for random beautiful cover images
+
+✔️ Activity log for entire organization
+
+✔️ Board rename and delete
+
+✔️ List creation. List rename, delete, drag & drop reorder and copy
+
+✔️ Card creation. Card description, rename, delete, drag & drop reorder and copy. Card activity log
+
+✔️ Board limit for every organization
+
+✔️ Stripe subscription for each organization to unlock unlimited boards
+
+✔️ MySQL DB
+
+✔️ Prisma ORM
+
 
 ---
 
 ## Technologies 🛠️
 
 
-- [<img width="30" height="30" src="https://img.icons8.com/plasticine/30/react.png" alt="react"/> **React**](https://react.dev/), [**React-DOM**](https://www.npmjs.com/package/react-dom) y  [**React icons**](https://react-icons.github.io/react-icons/)
+- [<img width="30" height="30" src="https://img.icons8.com/plasticine/30/react.png" alt="react"/> **React**](https://react.dev/), [**React-DOM**](https://www.npmjs.com/package/react-dom) and  [**React icons**](https://react-icons.github.io/react-icons/)
 
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> **Next.js 14**](https://nextjs.org/)
 
@@ -47,7 +72,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ## <img width="30" height="30" src="https://img.icons8.com/nolan/30/todo-list.png" alt="todo-list"/> Prerequisites
 
-- Node version 14.x
+- Node version 18.x. I used 20.0.0
 
 ---
 ---
@@ -73,11 +98,28 @@ npm i
 3. Setup ``.env`` file:
 
 ```
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+
+DATABASE_URL=
+
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
+
+STRIPE_API_KEY=
+
+NEXT_PUBLIC_APP_URL=
+
+STRIPE_WEBHOOK_SECRET=
 ```
 
-4. Setup Prisma: 
+4. Setup Prisma. Add MySQL Database (I used PlanetScale):
 
 ```BASH
+npx prisma generate
 npx prisma db push
 ```
 
