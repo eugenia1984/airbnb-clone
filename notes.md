@@ -55,3 +55,12 @@ export function GET() {
 It's a **route handler** so inside we can have GET; POST, PUT, etc. We do not use export **default**.
 
 ---
+
+## Components
+
+
+To be completed excluded on the router, we use the `_`
+
+```
+> _components
+```
