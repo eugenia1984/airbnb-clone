@@ -29,3 +29,29 @@ page.tsx -> '/'
 - Every time we use `Layout` we need to use `children` (`React.ReactNode`) to be able to display another page or component inside the layout, so we will have layouts for specific routes
 
 ---
+
+## API
+
+- **API** no need to use the API folder anymore. We use the `.ts` extension because it's not a functional component or a page (no use `.tsx`)
+
+```
+> app
+  > users
+    route.ts
+```
+
+A simple example:
+
+```TypeScript
+import { NextResponse } from 'next/server'
+
+export function GET() { 
+  return NextResponse.json({
+    hello: "hello"
+  })
+}
+```
+
+It's a **route handler** so inside we can have GET; POST, PUT, etc. We do not use export **default**.
+
+---
