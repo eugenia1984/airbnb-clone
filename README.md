@@ -1,14 +1,7 @@
-# <img width="30" height="30" src="https://img.icons8.com/color/30/airbnb.png" alt="airbnb"/> Full Stack Airbnb Clone 
+#  Full Stack Trello clone Wiki!
 
-This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating an **Airbnb** clone.
+This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating a **Trello* clone.
 
-### To try the login:
-
-```
-user: costamariaeugenia11@gmail.com
-pas: 123456
-name: euge
-```
 
 ---
 
@@ -20,7 +13,6 @@ name: euge
 
 ## Features 📢
 
-✔️ Login with e-mail and password, or Google or GitHub. Credential authentication. Google authentication. Github authentication
 
 ✔️ Tailwind design. Tailwind animations and effects
 
@@ -39,21 +31,7 @@ name: euge
 
 - [<img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> React icons](https://react-icons.github.io/react-icons/)
 
-- <img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/>  react-select
-
-- [<img width="30" height="30" src="https://img.icons8.com/dusk/30/form.png" alt="form"/> react-hook-form](https://www.react-hook-form.com/)
-
-- [<img width="30" height="30" src="https://img.icons8.com/cotton/30/toast--v1.png" alt="toast--v1"/> react-hot-toast](https://react-hot-toast.com/)
-
-- <img width="30" height="30" src="https://img.icons8.com/office/16/react.png" alt="react"/> react-leaflet
-
-- leaflet
-
-- query-string
-
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> Nextjs](https://nextjs.org/)
-
-- [Next-Auth](https://www.npmjs.com/package/next-auth)
 
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo"/> MongoDB Atlas](https://www.mongodb.com/atlas/database)
 
@@ -61,19 +39,12 @@ name: euge
 
 - [Prisma](https://www.prisma.io/)
 
-- [Next-Auth](https://next-auth.js.org/), install in the command line with: `npm install next-auth @prisma/client @next-auth/prima-adapter` if we are using the Prisma version 4 we will need the prisma adapter
-
 - [Bcrypt](https://www.npmjs.com/package/bcrypt) and add `npm install -D @types/bcrypt` to add types
 
-- [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-eslint-pluggable-and-configurable-linter-tool-for-identifying-and-reporting-on-patterns-in-javascript-logo-color-tal-revivo.png" alt="eslint pluggable and configurable linter tool for identifying and reporting on patterns in javascript"/> ESLint](https://eslint.org/)
-
-- [zustand](https://zustand-demo.pmnd.rs/)
+- [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-eslint-pluggable-and-configurable-linter-tool-for-identifying-and-reporting-on-patterns-in-javascript pluggable and configurable linter tool for identifying and reporting on patterns in javascript"/> ESLint](https://eslint.org/)
 
 - [axios](https://axios-http.com/docs/intro)
 
-- world-countries
-
-- next-cloudinary, to store the images
 
 ---
 ---
@@ -82,30 +53,24 @@ name: euge
 
 - Node version 14.x
 
-- Cloning the repository: ``git clone https://github.com/eugenia1984/airbnb-clone.git``
+- Cloning the repository: ``git clone https://github.com/eugenia1984/trello-clone.git``
 
 - Install packages: ``npm i`` or ``npm install``
 
 - Setup .env file:
 
 ```
-DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_SECRET=
 ```
 
-- Setup Prisma: ``npx prisma db push``
+- Setup Prisma: `npx prisma db push`
 
-- Start the app: ``npm run dev``
+- Start the app: `npm run dev`
 
 - Available commands: Running commands with npm npm run [command]
 
-| command	| description |
+| command | description |
 | ------- | ----------- |
-| ``dev`` |	Starts a development instance of the app |
+| `dev` | starts a development instance of the app |
 
 
 
@@ -161,8 +126,10 @@ The easiest way to deploy your **Next.js** app is to use the [Vercel Platform](h
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 ---
+
+Seguime en: [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
+
 ---
 
 ## <img width="30" height="30" src="https://img.icons8.com/dusk/30/apple-notes.png" alt="apple-notes"/> Notes
