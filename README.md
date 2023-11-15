@@ -56,7 +56,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/> **MongoDB Atlas**](https://www.mongodb.com/atlas/database)
 
-- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/) (PostCSS)
+- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/) and [**shadcn UI**](https://ui.shadcn.com/)
 
 - [**Prisma**](https://www.prisma.io/)
 
@@ -66,6 +66,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [**axios**](https://axios-http.com/docs/intro)
 
+- VSC extension recommended to use: Tailwind CSS IntelliSense
 
 ---
 ---
