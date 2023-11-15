@@ -41,7 +41,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [Bcrypt](https://www.npmjs.com/package/bcrypt) and add `npm install -D @types/bcrypt` to add types
 
-- [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="ESLint"/> ESLint](https://eslint.org/)
+- [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="eslint"/> ESLint](https://eslint.org/)
 
 - [axios](https://axios-http.com/docs/intro)
 
