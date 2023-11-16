@@ -64,3 +64,52 @@ To be completed excluded on the router, we use the `_`
 ```
 > _components
 ```
+
+---
+
+## LogIn and Sign In with Clerk
+
+
+If there is a server component:
+
+```TypeScript
+import { auth, currentUser } from '@clerk/nextjs'
+
+const ProtectedPage = async () => {
+
+  const user = await currentUser()
+  const { userId } = auth()
+
+  return (
+    <div>
+      User: { user?.firstName } { user?.lastName }
+      UserID: { userId }
+    </div>
+  )
+}
+
+export default ProtectedPage
+```
+
+If there is  client component:
+
+```TypeScript
+'use client'
+
+import { useAuth, useUser } from '@clerk/nextjs'
+
+const ProtectedPage = () => {
+
+  const { userId } = useAuth()
+  const { user } = useUser()
+
+  return (
+    <div>
+      UserId: { userId }
+      User: { user?.fullName }
+    </div>
+  )
+}
+
+export default ProtectedPage
+```
