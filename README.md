@@ -66,6 +66,8 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [**axios**](https://axios-http.com/docs/intro)
 
+- [**Zustand**](https://zustand-demo.pmnd.rs/), for the global states
+
 - [**Clerk**](https://clerk.com/), is more than a sign-in-box, integrate complete user management UIs nad APIs, purpose-build for React, Next.js and the Modern Web.
 
 - VSC extension recommended to use: Tailwind CSS IntelliSense
