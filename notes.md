@@ -147,4 +147,5 @@ Now we have a **prisma** folder with a **schema.prisma** file inside. And inside
 
 `npm install @prisma/client`, so we can use Prisma in our application
 
+5. `npx prisma studio` y se nos abre el `http://localhost:5555/` con Prisma Studio
 ---
