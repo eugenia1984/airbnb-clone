@@ -70,6 +70,10 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [**Clerk**](https://clerk.com/), is more than a sign-in-box, integrate complete user management UIs nad APIs, purpose-build for React, Next.js and the Modern Web.
 
+- [<img width="30" height="30" src="https://img.icons8.com/ios/30/prisma-orm.png" alt="prisma orm"/> **Prisma**](https://www.prisma.io/), Next-generation Node.js and TypeScript ORM. Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
+
+- PlanetScale or freemysqlhosting.net for the data base
+
 - VSC extension recommended to use: Tailwind CSS IntelliSense
 
 ---

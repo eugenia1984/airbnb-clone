@@ -113,3 +113,38 @@ const ProtectedPage = () => {
 
 export default ProtectedPage
 ```
+
+---
+
+## DATA BASE
+
+### Prisma
+
+- To install:
+
+```BASH
+npm i -D prisma
+```
+
+- To iniziacizing:
+
+```BASH
+npx prisma init
+```
+
+Now we have a **prisma** folder with a **schema.prisma** file inside. And inside the ***.env** we have a mock DATABASE_URL, that will be replace we our data base (Planet Scale)
+
+- Next steps:
+
+1. Set the DATABASE_URL in the .env file to point to your existing database. If your database has no tables yet, read https://pris.ly/d/getting-started
+
+2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+
+3. Run prisma db pull to turn your database schema into a Prisma schema. `npx prisma db push`, to have it sincronized with PlanetScale
+
+4. Run prisma generate to generate the Prisma Client. You can then start querying your database: `npx prisma generate`, to have it available in node-modules
+
+
+`npm install @prisma/client`, so we can use Prisma in our application
+
+---
