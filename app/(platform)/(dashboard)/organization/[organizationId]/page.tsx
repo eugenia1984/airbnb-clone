@@ -1,29 +1,34 @@
+import { create } from '@/actions/create-board'
+import { Button } from '@/components/ui/button'
 import { db } from '@/lib/db'
+import { Board } from './board'
 
-const OrganizationIdPage = () => {
-  async function create(formData: FormData) { 
-    'use server'
+const OrganizationIdPage = async () => {
 
-    const title = formData.get('title') as string
-
-    await db.board.create({
-      data: {
-        title,
-      }
-    })
-  }
-
+  const boards = await db.board.findMany()
   return (
-    <div>
-      <form action={ create}>
+    <div className="flex flex-col space-y-4">
+      <form action={ create }>
         <input
           id='title'
           name='title'
           required
           placeholder='Enter a board title'
-          className="border-black border p-1"
+          className="border-black border p-1 mr-2"
         />
+        <Button type='submit'>
+          Submit
+        </Button>
       </form>
+      <div className="space-y-2">
+        { boards.map((board) => (
+          <Board
+            key={ board.id }
+            title={ board.title }
+            id={ board.id }
+          />
+        )) }
+      </div>
     </div>
   )
 }
