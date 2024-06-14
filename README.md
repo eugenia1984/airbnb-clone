@@ -92,13 +92,14 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 ### <img width="30" height="30" src="https://img.icons8.com/dusk/30/workstation.png" alt="workstation"/>  Getting Started
 
 1. Cloning the repository: 
+
 ```BASH
 git clone https://github.com/eugenia1984/trello-clone.git
 ```
 
 And put inside the root folder
 
-2. After clonining the GitHub repository and install all the dependencies with:
+2. After cloning the GitHub repository and install all the dependencies with:
 
 ```BASH
 npm install
@@ -181,27 +182,6 @@ In my case is a **mongoDB atlas**, and after all the schemma run: `npm prisma db
 
 More information in our documentation: [https://pris.ly/d/getting-started](https://pris.ly/d/getting-started)
 
-
----
----
-
-#### <img width="30" height="30" src="https://img.icons8.com/color/30/book.png" alt="book"/> Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
----
-
-#### Deploy on Vercel
-
-The easiest way to deploy your **Next.js** app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ---
 
