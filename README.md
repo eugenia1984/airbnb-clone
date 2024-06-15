@@ -56,7 +56,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/> **MongoDB Atlas**](https://www.mongodb.com/atlas/database)
 
-- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/) and [**shadcn UI**](https://ui.shadcn.com/)
+- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/), [**shadcn UI**](https://ui.shadcn.com/) -for UI components- and [**Lucide**](https://lucide.dev/) -or icons-.
 
 - [**Prisma**](https://www.prisma.io/)
 
