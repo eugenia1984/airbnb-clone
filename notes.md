@@ -135,45 +135,43 @@ To be completed excluded on the router, we use the `_`
 If there is a server component:
 
 ```TypeScript
-import { auth, currentUser } from '@clerk/nextjs'
+import { auth, currentUser } from "@clerk/nextjs/server";
 
 const ProtectedPage = async () => {
-
-  const user = await currentUser()
-  const { userId } = auth()
+  const user = await currentUser();
+  const { userId } = auth();
 
   return (
     <div>
-      User: { user?.firstName } { user?.lastName }
-      UserID: { userId }
+      <p>User: {user?.firstName}</p>
+      <p>userId: {userId}</p>
     </div>
   )
 }
 
-export default ProtectedPage
+export default ProtectedPage;
 ```
 
 If there is  client component:
 
 ```TypeScript
-'use client'
+"use client";
 
-import { useAuth, useUser } from '@clerk/nextjs'
+import { useAuth, useUser } from "@clerk/nextjs";
 
 const ProtectedPage = () => {
-
-  const { userId } = useAuth()
-  const { user } = useUser()
+  const { userId } = useAuth();
+  const { user } = useUser();
 
   return (
     <div>
-      UserId: { userId }
-      User: { user?.fullName }
+      <p>User: {user?.firstName}</p>
+      <p>userId: {userId}</p>
     </div>
   )
 }
 
-export default ProtectedPage
+export default ProtectedPage;
 ```
 
 ---
