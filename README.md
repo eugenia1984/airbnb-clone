@@ -1,6 +1,6 @@
-#  <img width="40" height="40" src="https://img.icons8.com/color/40/trello.png" alt="trello"/> Full Stack Trello clone Wiki!
+#  Full Stack Airbnb clone Wiki!
 
-This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating a **Trello** clone.
+This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating an **Airbnb** clone.
 
 
 ---
@@ -20,30 +20,6 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ✔️ Landing page
 
-✔️ Auth
-
-✔️ Organizations / Workspaces
-
-✔️ Board creation
-
-✔️ Unsplash API for random beautiful cover images
-
-✔️ Activity log for entire organization
-
-✔️ Board rename and delete
-
-✔️ List creation. List rename, delete, drag & drop reorder and copy
-
-✔️ Card creation. Card description, rename, delete, drag & drop reorder and copy. Card activity log
-
-✔️ Board limit for every organization
-
-✔️ Stripe subscription for each organization to unlock unlimited boards
-
-✔️ MySQL DB
-
-✔️ Prisma ORM
-
 
 ---
 
@@ -54,27 +30,12 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> **Next.js 14**](https://nextjs.org/)
 
-- [<img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/30/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb"/> **MongoDB Atlas**](https://www.mongodb.com/atlas/database)
-
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/), [**shadcn UI**](https://ui.shadcn.com/) -for UI components- and [**Lucide**](https://lucide.dev/) -or icons-.
-
-- [**Prisma**](https://www.prisma.io/)
-
-- [**Bcrypt**](https://www.npmjs.com/package/bcrypt) and add `npm install -D @types/bcrypt` to add types
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="eslint"/> **ESLint**](https://eslint.org/)
 
-- [**axios**](https://axios-http.com/docs/intro)
-
-- [**Zustand**](https://zustand-demo.pmnd.rs/), for the global states
-
-- [**Clerk**](https://clerk.com/), is more than a sign-in-box, integrate complete user management UIs nad APIs, purpose-build for React, Next.js and the Modern Web.
-
 - [<img width="30" height="30" src="https://img.icons8.com/ios/30/prisma-orm.png" alt="prisma orm"/> **Prisma**](https://www.prisma.io/), Next-generation Node.js and TypeScript ORM. Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
 
-- **Zod**
-
-- **PlanetScale**. for the data base
 
 - VSC extension recommended to use: Tailwind CSS IntelliSense
 
@@ -83,7 +44,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ## <img width="30" height="30" src="https://img.icons8.com/nolan/30/todo-list.png" alt="todo-list"/> Prerequisites
 
-- Node version 18.x. I used 20.0.0
+- Node version 18.x. I used 20.4.1
 
 ---
 ---
@@ -94,7 +55,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 1. Cloning the repository: 
 
 ```BASH
-git clone https://github.com/eugenia1984/trello-clone.git
+git clone https://github.com/eugenia1984/airbnb-clone.git
 ```
 
 And put inside the root folder
@@ -110,22 +71,7 @@ npm i
 3. Setup ``.env`` file:
 
 ```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
 
-DATABASE_URL=
-
-NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
-
-STRIPE_API_KEY=
-
-NEXT_PUBLIC_APP_URL=
-
-STRIPE_WEBHOOK_SECRET=
 ```
 
 4. Setup Prisma. Add MySQL Database (I used PlanetScale):
