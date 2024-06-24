@@ -34,6 +34,8 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="eslint"/> **ESLint**](https://eslint.org/)
 
+- [**Kind**](https://kinde.com/)
+
 - [<img width="30" height="30" src="https://img.icons8.com/ios/30/prisma-orm.png" alt="prisma orm"/> **Prisma**](https://www.prisma.io/), Next-generation Node.js and TypeScript ORM. Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
 
 
@@ -91,7 +93,7 @@ npm run dev
 
 | command | description |
 | ------- | ----------- |
-| `dev` | starts a development instance of the app |
+| `npm run dev` | starts a development instance of the app |
 
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

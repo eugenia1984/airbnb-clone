@@ -1,6 +1,6 @@
-# NOTES
+# <img width="42" height="42" src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/42/external-note-pad-user-interface-flatart-icons-flat-flatarticons.png" alt="note pad"/> NOTES
 
-##  Directory structure
+## <img width="38" height="38" src="https://img.icons8.com/fluency/38/folder-invoices--v2.png" alt="folder"/> Directory structure
 
 ```
 > app
@@ -22,7 +22,7 @@ page.tsx -> '/'
 
 - Layout englobe the page.tsx root.
 
-- Using '[]' we can use params in the URL. By default the pages are **Server side rendering** so we can use `params` to read the URL param. We just need to call the params as we use between `[]`, example: `[id]` -> `params.id`
+- Using `[]` we can use params in the URL. By default the pages are **Server side rendering** so we can use `params` to read the URL param. We just need to call the params as we use between `[]`, example: `[id]` -> `params.id`
 
 - Every folder inside 'app' will be part of the URL route. If we name the folder between `()` we are not going to included it in the URL route, it can be use in reusable layout too the `()`. The `()` are useful to order inside a folder, for example if we need a different layout for specific route. We can se the example for: `/something` or `/other`, without `test`before `/`.
 
@@ -42,17 +42,17 @@ const TestLayout = ({
 export default TestLayout;
 ```
 
-`
+```
 > app
- > (test)
+  > (test)
   > other
   > something
   layout.tsx
-`
+```
 
 ---
 
-## API
+## <img width="32" height="32" src="https://img.icons8.com/papercut/32/api.png" alt="api"/> API
 
 - **API** no need to use the API folder anymore. We use the `.ts` extension because it's not a functional component or a page (no use `.tsx`)
 
@@ -87,7 +87,7 @@ At: `http://localhost:3000/users`we can see:
 ---
 
 
-## Server components
+## <img width="42" height="42" src="https://img.icons8.com/fluency/42/server--v1.png" alt="server"/> Server components
 
 - By default every **page** inside `/app` is a **Server component**.
 
@@ -129,54 +129,7 @@ To be completed excluded on the router, we use the `_`
 
 ---
 
-## LogIn and Sign In with Clerk
-
-
-If there is a server component:
-
-```TypeScript
-import { auth, currentUser } from "@clerk/nextjs/server";
-
-const ProtectedPage = async () => {
-  const user = await currentUser();
-  const { userId } = auth();
-
-  return (
-    <div>
-      <p>User: {user?.firstName}</p>
-      <p>userId: {userId}</p>
-    </div>
-  )
-}
-
-export default ProtectedPage;
-```
-
-If there is  client component:
-
-```TypeScript
-"use client";
-
-import { useAuth, useUser } from "@clerk/nextjs";
-
-const ProtectedPage = () => {
-  const { userId } = useAuth();
-  const { user } = useUser();
-
-  return (
-    <div>
-      <p>User: {user?.firstName}</p>
-      <p>userId: {userId}</p>
-    </div>
-  )
-}
-
-export default ProtectedPage;
-```
-
----
-
-## DATA BASE
+## <img width="42" height="42" src="https://img.icons8.com/fluency/42/database--v1.png" alt="database--v1"/> DATA BASE
 
 ### Prisma
 
@@ -208,4 +161,5 @@ Now we have a **prisma** folder with a **schema.prisma** file inside. And inside
 `npm install @prisma/client`, so we can use Prisma in our application
 
 5. `npx prisma studio` y se nos abre el `http://localhost:5555/` con Prisma Studio
+
 ---
