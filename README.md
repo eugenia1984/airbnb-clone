@@ -1,4 +1,4 @@
-#  Full Stack Airbnb clone Wiki!
+#  Full Stack Airbnb clone!
 
 This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), creating an **Airbnb** clone.
 
