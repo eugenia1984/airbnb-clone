@@ -36,6 +36,8 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [**Kinde**](https://kinde.com/) - auth for modern applications
 
+- [**Supabase**](https://supabase.com/):  is an open source Firebase alternative. Start your project with a Postgres database, Authentication, instant APIs, Edge Functions, Realtime subscriptions, Storage, and Vector embeddings.
+
 - [<img width="30" height="30" src="https://img.icons8.com/ios/30/prisma-orm.png" alt="prisma orm"/> **Prisma**](https://www.prisma.io/), Next-generation Node.js and TypeScript ORM. Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
 
 
@@ -73,7 +75,13 @@ npm i
 3. Setup ``.env`` file:
 
 ```
+KINDE_CLIENT_ID=<your_kinde_client_id>
+KINDE_CLIENT_SECRET=<your_kinde_client_secret>
+KINDE_ISSUER_URL=https://<your_kinde_subdomain>.kinde.com
 
+KINDE_SITE_URL=http://localhost:3000
+KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
+KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/dashboard
 ```
 
 4. Setup Prisma. Add MySQL Database (I used PlanetScale):
@@ -94,10 +102,10 @@ npm run dev
 | command | description |
 | ------- | ----------- |
 | `npm run dev` | starts a development instance of the app |
+| `npx prisma init` | initialize prisma|
 
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-7. This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ---
 ---
@@ -122,7 +130,7 @@ Next steps:
 
 2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
 
-In my case is a **mongoDB atlas**, and after all the schemma run: `npm prisma db push`
+In my case is a **mongoDB atlas**, and after all the schemma run: `npx prisma db push`
 
 3. Run prisma db pull to turn your database schema into a Prisma schema.
 

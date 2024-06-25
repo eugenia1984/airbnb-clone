@@ -1,7 +1,9 @@
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { MenuIcon } from "lucide-react"
 import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
+
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+
+import { MenuIcon } from "lucide-react"
 
 export async function UserNav() {
   const { getUser } = getKindeServerSession()
@@ -15,7 +17,8 @@ export async function UserNav() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={
-              user?.picture ?? "https://img.icons8.com/ios-filled/50/user-male-circle.png"
+              user?.picture ??
+              "https://img.icons8.com/ios-filled/50/user-male-circle.png"
             }
             alt="image of the user"
             className="rounded-full h-8 w-8 hidden lg:block"
