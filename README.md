@@ -82,6 +82,9 @@ KINDE_ISSUER_URL=https://<your_kinde_subdomain>.kinde.com
 KINDE_SITE_URL=http://localhost:3000
 KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
 KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/dashboard
+
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:6543/mydb?schema=public?pgbouncer=true&connection_limit=1"
+DIRECT_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 ```
 
 4. Setup Prisma. Add MySQL Database (I used PlanetScale):
