@@ -30,7 +30,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/fluency-systems-regular/30/nextjs.png" alt="nextjs"/> **Next.js 14**](https://nextjs.org/)
 
-- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/), [**shadcn UI**](https://ui.shadcn.com/) -for UI components- and [**Lucide**](https://lucide.dev/) -or icons-.
+- [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/), [**shadcn UI**](https://ui.shadcn.com/) -for UI components- and [**Lucide**](https://lucide.dev/) -for icons-.
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="eslint"/> **ESLint**](https://eslint.org/)
 
