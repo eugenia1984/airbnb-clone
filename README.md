@@ -89,8 +89,18 @@ DIRECT_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=publi
 
 4. Setup Prisma. Add MySQL Database :
 
+- To create:
 ```BASH
 npx prisma generate
+```
+
+- To start Prisma and create an schema:
+```BASH
+npx prisma init
+``` 
+
+- To update the schema:
+```BASH
 npx prisma db push
 ```
 
@@ -100,49 +110,26 @@ npx prisma db push
 npm run dev
 ```
 
-- Available commands: Running commands with npm npm run [command]
+- <img width="30" height="30" src="https://img.icons8.com/color/30/command-line.png" alt="command-line"/>  Available commands: Running commands with:   `npm run [command]`
 
 | command | description |
 | ------- | ----------- |
-| `npm run dev` | starts a development instance of the app |
-| `npx prisma init` | initialize prisma |
-| `npx prisma studio` | to see the data base |
+| `dev` | starts a development instance of the app |
+
+
+- <img width="30" height="30" src="https://img.icons8.com/color/30/command-line.png" alt="command-line"/>  Available commands: Running commands with:   `npx prisma [command]`
+
+| command | description |
+| ------- | ----------- |
+| ` init` | initialize prisma |
+| ` studio` | to see the data base |
+| ` db push`| to update the schemas in the data base |
+
 
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 ---
----
-
-### <img width="30" height="30" src="https://img.icons8.com/color/30/command-line.png" alt="command-line"/> Commands
-
-- To run the Next application
-
-```BASH
-npm run dev
-``` 
-
-- To start Prisma and create an schema
-
-```BASH
-npx prisma init
-``` 
-
-Next steps:
-
-1. Set the DATABASE_URL in the **.env** file to point to your existing database. If your database has no tables yet, read [https://pris.ly/d/getting-started](https://pris.ly/d/getting-started)
-
-2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
-
-In my case is a **mongoDB atlas**, and after all the schemma run: `npx prisma db push`
-
-3. Run prisma db pull to turn your database schema into a Prisma schema.
-
-4. Run prisma generate to generate the Prisma Client. You can then start querying your database.
-
-More information in our documentation: [https://pris.ly/d/getting-started](https://pris.ly/d/getting-started)
-
-
 ---
 
 
