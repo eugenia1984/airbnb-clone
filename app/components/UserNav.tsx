@@ -1,25 +1,25 @@
-import Link from "next/link"
-
 import { RegisterLink, LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components"
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
 
-import { 
-  Heart, 
-  List, 
-  LogOut, 
-  MenuIcon, 
-  CalendarCheck, 
+import {
+  Heart,
+  List,
+  LogOut,
+  MenuIcon,
+  CalendarCheck,
   LogIn,
-  BookCheck 
+  BookCheck
 } from "lucide-react"
+
+import { UserNavMenuItem } from "./UserNavMenuItem"
+import { UserNavMenuItemWithLink } from "./UserNavMenuItemWithLink"
 
 export async function UserNav() {
   const { getUser } = getKindeServerSession()
@@ -45,52 +45,38 @@ export async function UserNav() {
         {user ?
           (
             <>
-              <DropdownMenuItem>
-                <Link
-                  href="/my-homes"
-                  className="w-full flex gap-x-2 items-center hover:text-green-600"
-                >
-                  <List /> Listings
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/favorites"
-                  className="w-full flex gap-x-2 items-center hover:text-green-600"
-                >
-                  <Heart /> Favorites
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
-                  href="/reservations"
-                  className="w-full flex gap-x-2 items-center hover:text-green-600"
-                >
-                  <CalendarCheck /> Reservations
-                </Link>
-              </DropdownMenuItem>
+              <UserNavMenuItem>
+                <form className="w-full">
+                  <button type="submit" className="w-full text-start">
+                    AirbnbClone your Home
+                  </button>
+                </form>
+              </UserNavMenuItem>
+              <UserNavMenuItemWithLink href="/my-homes" text="Listings" icon={<List />} />
+              <UserNavMenuItemWithLink href="/favorites" text="Favorites" icon={<Heart />} />
+              <UserNavMenuItemWithLink href="/reservations" text="Reservations" icon={<CalendarCheck  />} />
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
+              <UserNavMenuItem>
                 <LogoutLink className="w-full flex gap-x-2 items-center hover:text-green-600">
                   <LogOut /> Logout
                 </LogoutLink>
-              </DropdownMenuItem>
+              </UserNavMenuItem>
             </>
           )
           :
           (
             <>
-              <DropdownMenuItem>
+              <UserNavMenuItem>
                 <RegisterLink className="w-full flex gap-x-2 items-center hover:text-green-600">
                   <BookCheck /> Register
                 </RegisterLink>
-              </DropdownMenuItem>
+              </UserNavMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
+              <UserNavMenuItem>
                 <LoginLink className="w-full flex gap-x-2 items-center hover:text-green-600">
                   <LogIn /> Login
                 </LoginLink>
-              </DropdownMenuItem>
+              </UserNavMenuItem>
             </>
           )
         }
