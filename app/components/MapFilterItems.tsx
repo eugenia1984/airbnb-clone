@@ -6,9 +6,10 @@ import { usePathname, useSearchParams } from "next/navigation"
 
 import { useCallback } from "react"
 
-import { categoryItems } from "./lib/categoryItems"
+
 
 import { cn } from "@/lib/utils"
+import { categoryItems } from "../lib/categoryItems"
 
 export function MapFilterItems() {
   const searchParams = useSearchParams()

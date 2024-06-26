@@ -81,13 +81,13 @@ KINDE_ISSUER_URL=https://<your_kinde_subdomain>.kinde.com
 
 KINDE_SITE_URL=http://localhost:3000
 KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
-KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/dashboard
+KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/api/auth/creation
 
 DATABASE_URL="postgresql://johndoe:randompassword@localhost:6543/mydb?schema=public?pgbouncer=true&connection_limit=1"
 DIRECT_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 ```
 
-4. Setup Prisma. Add MySQL Database (I used PlanetScale):
+4. Setup Prisma. Add MySQL Database :
 
 ```BASH
 npx prisma generate
@@ -105,7 +105,8 @@ npm run dev
 | command | description |
 | ------- | ----------- |
 | `npm run dev` | starts a development instance of the app |
-| `npx prisma init` | initialize prisma|
+| `npx prisma init` | initialize prisma |
+| `npx prisma studio` | to see the data base |
 
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
