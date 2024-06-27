@@ -3,9 +3,10 @@ import { Counter } from "../Counter"
 type Props = {
   title: string
   placeholder: string
+  name: string
 }
 
-export function SelectAmountItem({title, placeholder}: Props) {
+export function SelectAmountItem({title, placeholder, name }: Props) {
   return (
     <div className="flex items-center justify-between">
       <div className="flex flex-col">
@@ -16,7 +17,7 @@ export function SelectAmountItem({title, placeholder}: Props) {
           {placeholder}
         </p>
       </div>
-      <Counter />
+      <Counter name={name} />
     </div>
   )
 }

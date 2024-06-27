@@ -52,9 +52,9 @@ export default function DescriptionPage () {
           </div>
           <Card>
             <CardHeader className="flex flex-col gap-y-5">
-              <SelectAmountItem title="Guest" placeholder="How many guest?"/>
-              <SelectAmountItem title="Rooms" placeholder="How many rooms?"/>
-              <SelectAmountItem title="Bathrooms" placeholder="How many bathrooms?"/>
+              <SelectAmountItem title="Guest" placeholder="How many guest?" name="guest" />
+              <SelectAmountItem title="Rooms" placeholder="How many rooms?" name="rooms" />
+              <SelectAmountItem title="Bathrooms" placeholder="How many bathrooms?" name="bathrooms" />
             </CardHeader>
           </Card>
         </div>
