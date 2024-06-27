@@ -3,14 +3,15 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader } from "@/components/ui/card"
 import { Counter } from "@/app/components/Counter"
+import { CreationButton } from "@/app/components/CreationButton"
+import { HeadlineH2 } from "@/app/components/ui/HeadlineH2"
+import { SelectAmountItem } from "@/app/components/ui/SelectAmountItem"
 
 export default function DescriptionPage () {
   return(
     <>
       <div className="w-3/5 mx-auto">
-        <h2 className="text-3xl font-semibold tracking-tight transition-colors">
-          Please describe your home
-        </h2>
+      <HeadlineH2 text="Please describe your home"/>
       </div>
       <form>
         <div className="mx-auto w-3/5 mt-10 flex flex-col gap-y-5 mb-36">
@@ -51,20 +52,13 @@ export default function DescriptionPage () {
           </div>
           <Card>
             <CardHeader className="flex flex-col gap-y-5">
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col">
-                  <h3 className="underline font-medium">
-                    Guest
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    How many guest ?
-                  </p>
-                </div>
-                <Counter />
-              </div>
+              <SelectAmountItem title="Guest" placeholder="How many guest?"/>
+              <SelectAmountItem title="Rooms" placeholder="How many rooms?"/>
+              <SelectAmountItem title="Bathrooms" placeholder="How many bathrooms?"/>
             </CardHeader>
           </Card>
         </div>
+        <CreationButton />
       </form>
     </>
   )
