@@ -14,6 +14,11 @@ export function SelectCategory() {
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-10 w-3/5 mx-auto mb-36">
+      <input 
+        type="hidden" 
+        name="categoryName" 
+        value={selectedCategory as string}
+      />
       {categoryItems.map((category) => (
         <div key={category.id} className="cursor-pointer">
           <Card

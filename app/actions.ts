@@ -1,8 +1,8 @@
 "use server";
 
-import { redirect } from "next/navigation"
+import { redirect } from "next/navigation";
 
-import prisma from "./lib/db"
+import prisma from "./lib/db";
 
 export async function createAirbnbCloneHome({ userId }: { userId: string }) {
   const data = await prisma.home.findFirst({
@@ -11,23 +11,39 @@ export async function createAirbnbCloneHome({ userId }: { userId: string }) {
     },
     orderBy: {
       createdAT: "desc",
-    }
+    },
   });
 
-  if(data === null) {
+  if (data === null) {
     const data = await prisma.home.create({
       data: {
         userId: userId,
-      }
-    })
+      },
+    });
 
-    return redirect(`/create/${data.id}/structure`)
+    return redirect(`/create/${data.id}/structure`);
   } else if (
     !data.addedCategory &&
     !data.addedDescription &&
     !data.addedLocation
   ) {
     return redirect(`/create/${data.id}/structure`);
-  } 
+  } else if (data.addedCategory && !data.addedDescription) {
+    return redirect(`/create/${data.id}/description`);
+  }
+}
 
-}  
+export async function createCategoryPage(formData: FormData) {
+  const categoryName = formData.get('categoryName') as string
+  const homeId = formData.get('homeId') as string
+
+  const data = await prisma.home.update({
+    where: {
+      id: homeId
+    },
+    data: {
+      categoryName: categoryName,
+      addedCategory: true,
+    },
+  });
+}
