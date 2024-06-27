@@ -89,7 +89,7 @@ DIRECT_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=publi
 
 4. Setup Prisma. Add MySQL Database :
 
-- To create:
+- To generate the Prisma client, always after `npx prisma db push`command:
 ```BASH
 npx prisma generate
 ```
@@ -99,7 +99,7 @@ npx prisma generate
 npx prisma init
 ``` 
 
-- To update the schema:
+- To update the database schema (when we make an update in the `schema.prisma` file):
 ```BASH
 npx prisma db push
 ```

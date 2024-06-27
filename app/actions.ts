@@ -12,7 +12,7 @@ export async function createAirbnbCloneHome({ userId }: { userId: string }) {
     orderBy: {
       createdAT: "desc",
     }
-  })
+  });
 
   if(data === null) {
     const data = await prisma.home.create({
@@ -22,5 +22,12 @@ export async function createAirbnbCloneHome({ userId }: { userId: string }) {
     })
 
     return redirect(`/create/${data.id}/structure`)
-  }
-}
+  } else if (
+    !data.addedCategory &&
+    !data.addedDescription &&
+    !data.addedLocation
+  ) {
+    return redirect(`/create/${data.id}/structure`);
+  } 
+
+}  

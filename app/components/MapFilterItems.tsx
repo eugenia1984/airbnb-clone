@@ -6,8 +6,6 @@ import { usePathname, useSearchParams } from "next/navigation"
 
 import { useCallback } from "react"
 
-
-
 import { cn } from "@/lib/utils"
 import { categoryItems } from "../lib/categoryItems"
 

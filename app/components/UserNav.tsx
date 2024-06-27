@@ -27,7 +27,9 @@ export async function UserNav() {
   const { getUser } = getKindeServerSession()
   const user = await getUser()
 
-  const createHomeWithId = createAirbnbCloneHome.bind(null, { userId: user?.id as string })
+  const createHomeWithId = createAirbnbCloneHome.bind(null, { 
+    userId: user?.id as string 
+  })
 
   return (
     <DropdownMenu>
