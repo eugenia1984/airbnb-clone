@@ -2,6 +2,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader } from "@/components/ui/card"
+import { Counter } from "@/app/components/Counter"
 
 export default function DescriptionPage () {
   return(
@@ -59,6 +60,7 @@ export default function DescriptionPage () {
                     How many guest ?
                   </p>
                 </div>
+                <Counter />
               </div>
             </CardHeader>
           </Card>
