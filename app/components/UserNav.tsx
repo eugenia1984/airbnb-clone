@@ -21,9 +21,13 @@ import {
 import { UserNavMenuItem } from "./UserNavMenuItem"
 import { UserNavMenuItemWithLink } from "./UserNavMenuItemWithLink"
 
+import { createAirbnbCloneHome } from "../actions"
+
 export async function UserNav() {
   const { getUser } = getKindeServerSession()
   const user = await getUser()
+
+  const createHomeWithId = createAirbnbCloneHome.bind(null, { userId: user?.id as string })
 
   return (
     <DropdownMenu>
@@ -46,7 +50,7 @@ export async function UserNav() {
           (
             <>
               <UserNavMenuItem>
-                <form className="w-full">
+                <form action={createHomeWithId} className="w-full">
                   <button type="submit" className="w-full text-start">
                     AirbnbClone your Home
                   </button>
@@ -54,7 +58,7 @@ export async function UserNav() {
               </UserNavMenuItem>
               <UserNavMenuItemWithLink href="/my-homes" text="Listings" icon={<List />} />
               <UserNavMenuItemWithLink href="/favorites" text="Favorites" icon={<Heart />} />
-              <UserNavMenuItemWithLink href="/reservations" text="Reservations" icon={<CalendarCheck  />} />
+              <UserNavMenuItemWithLink href="/reservations" text="Reservations" icon={<CalendarCheck />} />
               <DropdownMenuSeparator />
               <UserNavMenuItem>
                 <LogoutLink className="w-full flex gap-x-2 items-center hover:text-green-600">
