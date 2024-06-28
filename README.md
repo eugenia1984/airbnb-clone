@@ -85,6 +85,10 @@ KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/api/auth/creation
 
 DATABASE_URL="postgresql://johndoe:randompassword@localhost:6543/mydb?schema=public?pgbouncer=true&connection_limit=1"
 DIRECT_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+
+# SUPERBASE
+SUPABASE_URL=your-superbase-project-url-here
+SUPABASE_ANON_KEY=your-superbase-project-api-key-here
 ```
 
 4. Setup Prisma. Add MySQL Database :
