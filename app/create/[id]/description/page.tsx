@@ -16,9 +16,9 @@ export default function DescriptionPage ({
 }) {
   return(
     <>
-      <div className="w-3/5 mx-auto">
-      <HeadlineH2 text="Please describe your home"/>
-      </div>
+      <section className="w-3/5 mx-auto pb-8">
+        <HeadlineH2 text="Please describe your home"/>
+      </section>
       <form action={createDescription}>
         <input type="hidden" name="homeId" value={params.id}/>
         <div className="mx-auto w-3/5 mt-10 flex flex-col gap-y-5 mb-36">

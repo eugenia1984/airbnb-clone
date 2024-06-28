@@ -40,6 +40,7 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/ios/30/prisma-orm.png" alt="prisma orm"/> **Prisma**](https://www.prisma.io/), Next-generation Node.js and TypeScript ORM. Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
 
+- [**world-countries**](https://mledoze.github.io/countries/), to have a list of countries
 
 - VSC extension recommended to use: Tailwind CSS IntelliSense
 
