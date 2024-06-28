@@ -5,6 +5,7 @@ import { ListingCard } from "./components/ui/ListingCard"
 
 import prisma from "./lib/db"
 import { SkeletonLoading } from "./components/ui/SkeletonLoading"
+import { NoItems } from "./components/ui/NoItems"
 
 async function getData({
   searchParams
@@ -59,16 +60,21 @@ async function ShowItems({
   const data = await getData({ searchParams: searchParams })
 
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-8">
-      {data.map((item) => (
-        <ListingCard
-          key={item.id}
-          description={item.description as string}
-          imagePath={item.photo as string}
-          location={item.country as string}
-          price={item.price as number}
-        />
-      ))}
-    </div>
+    <>
+      {data.length === 0 ? (<NoItems />)
+        :
+        (<div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-8">
+          {data.map((item) => (
+            <ListingCard
+              key={item.id}
+              description={item.description as string}
+              imagePath={item.photo as string}
+              location={item.country as string}
+              price={item.price as number}
+            />
+          ))}
+        </div >)
+      }
+    </>
   )
 }
