@@ -101,4 +101,6 @@ export async function createLocation(formData: FormData) {
       country: countryValue
     }
   })
+
+  return redirect('/')
 }

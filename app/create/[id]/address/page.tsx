@@ -21,7 +21,9 @@ import {
 import { Skeleton } from "@/components/ui/skeleton"
 import { CreationButton } from "@/app/components/CreationButton"
 
-export default function AddressRoute() {
+import { createLocation } from "@/app/actions"
+
+export default function AddressRoute({params}: {params: {id: string}}) {
   const { getAllCountries } = useCountries()
   const [locationValue, setLocationValue] = useState('')
 
@@ -37,7 +39,9 @@ export default function AddressRoute() {
       <section className="w-3/5 mx-auto pb-8">
         <HeadlineH2 text="Where is your home located?" />
       </section>
-      <form>
+      <form action={createLocation}>
+        <input type="hidden" name="homeId" value={params.id} />
+        <input type="hidden" name="countryValue" value={locationValue} />
         <div className="w-3/5 mx-auto mb-36">
           <div className="mb-5">
             <Select required onValueChange={(value) => setLocationValue(value) }>
