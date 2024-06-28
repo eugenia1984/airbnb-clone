@@ -59,8 +59,8 @@ export async function createDescription(formData: FormData) {
   const homeId = formData.get("homeId") as string
 
   const guestNumber = formData.get("guest") as string
-  const roomNumber = formData.get("room") as string
-  const bathroomNumber = formData.get("bathroom") as string
+  const roomNumber = formData.get("rooms") as string
+  const bathroomNumber = formData.get("bathrooms") as string
 
   const { data: imageData } = await supabase.storage
     .from("images")
