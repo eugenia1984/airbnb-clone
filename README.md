@@ -42,6 +42,8 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [**world-countries**](https://mledoze.github.io/countries/), to have a list of countries
 
+- [**React leaflet & Leaflet**](https://react-leaflet.js.org/), React components for Leaflet maps
+
 - VSC extension recommended to use: Tailwind CSS IntelliSense
 
 ---
