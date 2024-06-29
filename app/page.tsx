@@ -1,14 +1,21 @@
 import { Suspense } from "react"
 
-import { ListingCard, MapFilterItems } from "@/app/components"
+import { 
+  ListingCard, 
+  MapFilterItems, 
+  NoItems, 
+  SkeletonLoading 
+} from "@/app/components"
 
 import prisma from "./lib/db"
 
-import { NoItems, SkeletonLoading } from "@/app/components"
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 
 async function getData({
-  searchParams
+  searchParams,
+  userId
 }: {
+  userId: string | undefined,
   searchParams?: {
     filter?: string
   }
@@ -25,7 +32,12 @@ async function getData({
       id: true,
       price: true,
       description: true,
-      country: true
+      country: true,
+      Favorite: {
+        where: {
+          userId: userId ?? undefined
+        }
+      }
     }
   })
 
@@ -33,7 +45,7 @@ async function getData({
 }
 
 export default function Home({
-  searchParams
+  searchParams,
 }: {
   searchParams?: {
     filter?: string
@@ -56,11 +68,13 @@ async function ShowItems({
     filter?: string
   }
 }) {
-  const data = await getData({ searchParams: searchParams })
+  const { getUser } = getKindeServerSession()
+  const user = await getUser()
+  const data = await getData({ searchParams: searchParams, userId: user?.id })
 
   return (
     <>
-      {data.length === 0 ? (<NoItems />)
+      {data.length === 0 ? <NoItems />
         :
         (<div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-8">
           {data.map((item) => (
@@ -70,6 +84,10 @@ async function ShowItems({
               imagePath={item.photo as string}
               location={item.country as string}
               price={item.price as number}
+              userId={user?.id}
+              favoriteId={item.Favorite[0]?.id}
+              isInFavoriteList={item.Favorite.length > 0 ? true : false }
+              homeId={item.id}
             />
           ))}
         </div >)

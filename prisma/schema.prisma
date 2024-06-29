@@ -37,6 +37,7 @@ model Home {
   photo        String?
   price        Int?
   categoryName String?
+  Favorite     Favorite[]
 
   addedCategory    Boolean @default(false)
   addedDescription Boolean @default(false)
@@ -45,7 +46,6 @@ model Home {
   createdAT DateTime   @default(now())
   User      User?      @relation(fields: [userId], references: [id])
   userId    String?
-  Favorite  Favorite[]
 }
 
 model Favorite {

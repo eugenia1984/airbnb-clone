@@ -7,8 +7,11 @@ export const NoItems = () => {
         <File className="h-12 w-12 text-primary"/>
       </div>
       <h2 className="mt-6 text-xl font-semibold" >
-        No listings for this category
+        No listings found for this category
       </h2>
+      <p className="mt-3 text-center text-sm leading-6 text-muted-foreground" >
+        Please check another category or create your own listing
+      </p>
     </div>
   )
 }
