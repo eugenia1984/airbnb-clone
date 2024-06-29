@@ -3,7 +3,8 @@ import Link from "next/link"
 
 import { useCountries } from "@/app/lib/getCountries"
 import { DeleteFromFavorite, addToFavorite  } from "@/app/actions"
-import { AddToFavoriteButton, DeleteFromFavoriteButton} from "../SubmitButtons"
+
+import { AddToFavoriteButton, DeleteFromFavoriteButton } from "@/app/components"
 
 interface Props {
   imagePath: string
@@ -17,7 +18,7 @@ interface Props {
   pathName: string
 }
 
-export function ListingCard({
+export const ListingCard = ({
   description,
   imagePath,
   location,
@@ -27,12 +28,12 @@ export function ListingCard({
   homeId,
   isInFavoriteList,
   pathName,
-}: Props) {
+}: Props) => {
   const { getCountryByValue } = useCountries()
   const country = getCountryByValue(location)
 
   return (
-    <div className="flex flex-col">
+    <section className="flex flex-col">
       <div className="relative h-72">
         <Image
           src={`https://cxkkdrskuecnodukdobx.supabase.co/storage/v1/object/public/images/${imagePath}`}
@@ -74,6 +75,6 @@ export function ListingCard({
           <span className="font-medium text-black">EUR {price}</span> per Night
         </p>
       </Link>
-    </div>
+    </section>
   )
 }

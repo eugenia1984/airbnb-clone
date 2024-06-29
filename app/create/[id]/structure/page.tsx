@@ -1,8 +1,6 @@
-import { SelectCategory } from "@/app/components/SelectCategory"
-
 import { createCategoryPage } from "@/app/actions"
-import { CreationButton } from "@/app/components/CreationButton"
-import { HeadlineH2 } from "@/app/components/ui/HeadlineH2"
+
+import { HeadlineH2, CreationButton, SelectCategory } from "@/app/components"
 
 export default function StructureRoute({params}: {params: {id: string}}) {
   return (

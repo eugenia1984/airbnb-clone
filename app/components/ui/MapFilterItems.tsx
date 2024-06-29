@@ -7,9 +7,10 @@ import { usePathname, useSearchParams } from "next/navigation"
 import { useCallback } from "react"
 
 import { cn } from "@/lib/utils"
-import { categoryItems } from "../lib/categoryItems"
+import { categoryItems } from "@/app/lib/categoryItems"
 
-export function MapFilterItems() {
+
+export const MapFilterItems = () => {
   const searchParams = useSearchParams()
   const search = searchParams.get('filter')
   const pathName = usePathname()
@@ -24,7 +25,7 @@ export function MapFilterItems() {
   )
 
   return (
-    <div className="flex gap-x-10 mt-5 w-full overflow-x-scroll no-scrollbar" >
+    <section className="flex gap-x-10 mt-5 w-full overflow-x-scroll no-scrollbar" >
       {categoryItems.map((category) => (
         <Link
           key={category.id} href={`${pathName}?${createQueryString('filter', category.name)}`}
@@ -50,6 +51,6 @@ export function MapFilterItems() {
           </p>
         </Link>
       ))}
-    </div>
+    </section>
   )
 }

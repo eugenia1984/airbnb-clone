@@ -1,11 +1,10 @@
 import { Suspense } from "react"
 
-import { MapFilterItems } from "./components/MapFilterItems"
-import { ListingCard } from "./components/ui/ListingCard"
+import { ListingCard, MapFilterItems } from "@/app/components"
 
 import prisma from "./lib/db"
-import { SkeletonLoading } from "./components/ui/SkeletonLoading"
-import { NoItems } from "./components/ui/NoItems"
+
+import { NoItems, SkeletonLoading } from "@/app/components"
 
 async function getData({
   searchParams

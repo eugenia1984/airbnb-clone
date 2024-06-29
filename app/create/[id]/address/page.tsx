@@ -7,7 +7,7 @@ import dynamic from "next/dynamic"
 
 import { useCountries } from "@/app/lib/getCountries"
 
-import { HeadlineH2 } from "@/app/components/ui/HeadlineH2"
+import { HeadlineH2, CreationButton } from "@/app/components"
 
 import {
   Select,
@@ -19,7 +19,6 @@ import {
   SelectValue
 } from "@/components/ui/select"
 import { Skeleton } from "@/components/ui/skeleton"
-import { CreationButton } from "@/app/components/CreationButton"
 
 import { createLocation } from "@/app/actions"
 

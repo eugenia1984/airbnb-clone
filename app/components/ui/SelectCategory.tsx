@@ -6,14 +6,13 @@ import Image from "next/image"
 
 import { Card, CardHeader } from "@/components/ui/card"
 
-import { categoryItems } from "../lib/categoryItems"
+import { categoryItems } from "@/app/lib/categoryItems"
 
-
-export function SelectCategory() {
+export const SelectCategory = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-10 w-3/5 mx-auto mb-36">
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-10 w-3/5 mx-auto mb-36">
       <input 
         type="hidden" 
         name="categoryName" 
@@ -40,6 +39,6 @@ export function SelectCategory() {
           </Card>
         </div>
       ))}
-    </div>
+    </section>
   )
 }

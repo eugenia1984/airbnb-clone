@@ -3,9 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader } from "@/components/ui/card"
 
-import { CreationButton } from "@/app/components/CreationButton"
-import { HeadlineH2 } from "@/app/components/ui/HeadlineH2"
-import { SelectAmountItem } from "@/app/components/ui/SelectAmountItem"
+import { HeadlineH2, SelectAmountItem, CreationButton} from "@/app/components"
 
 import { createDescription } from "@/app/actions"
 

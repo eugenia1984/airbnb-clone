@@ -7,7 +7,7 @@ type UserNavMenuItemProps = {
   children: React.ReactElement
 }
 
-export function UserNavMenuItem({ children }: UserNavMenuItemProps) {
+export const UserNavMenuItem = ({ children }: UserNavMenuItemProps) => {
   return (
     <DropdownMenuItem>
       {children}

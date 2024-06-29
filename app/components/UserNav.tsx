@@ -18,8 +18,7 @@ import {
   BookCheck
 } from "lucide-react"
 
-import { UserNavMenuItem } from "./UserNavMenuItem"
-import { UserNavMenuItemWithLink } from "./UserNavMenuItemWithLink"
+import { UserNavMenuItem, UserNavMenuItemWithLink } from "@/app/components"
 
 import { createAirbnbCloneHome } from "../actions"
 

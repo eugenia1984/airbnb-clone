@@ -4,13 +4,13 @@ import Link from "next/link"
 
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu"
 
-type UserNavMenuItemProps = {
+type Props = {
   href: string
   text: string
   icon: React.ReactElement
 }
 
-export function UserNavMenuItemWithLink({ href, text, icon }: UserNavMenuItemProps) {
+export  const UserNavMenuItemWithLink = ({ href, text, icon }: Props) => {
   return (
     <DropdownMenuItem>
       <Link href={href} className="w-full flex gap-x-2 items-center hover:text-green-600" >

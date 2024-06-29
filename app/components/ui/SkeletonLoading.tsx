@@ -1,6 +1,6 @@
-import { SkeltonCard } from "./SkeletonCard"
+import { SkeltonCard } from "@/app/components"
 
-export function SkeletonLoading() {
+export const SkeletonLoading = () => {
   return(
     <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-8">
       <SkeltonCard />
