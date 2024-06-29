@@ -7,8 +7,6 @@ import dynamic from "next/dynamic"
 
 import { useCountries } from "@/app/lib/getCountries"
 
-import { HeadlineH2, CreationButton } from "@/app/components"
-
 import {
   Select,
   SelectContent,
@@ -21,6 +19,8 @@ import {
 import { Skeleton } from "@/components/ui/skeleton"
 
 import { createLocation } from "@/app/actions"
+import { HeadlineH2 } from "@/app/components/HeadlineH2"
+import { CreationButton } from "@/app/components/CreationButton"
 
 export default function AddressRoute({params}: {params: {id: string}}) {
   const { getAllCountries } = useCountries()
@@ -31,8 +31,10 @@ export default function AddressRoute({params}: {params: {id: string}}) {
     loading: () =>  <Skeleton className="h-[50vh] w-full" />
   })
 
-  const sortedCountries = getAllCountries().sort((a, b) => a.label.localeCompare(b.label))
+  const europeanCountries = getAllCountries().filter(country => country.region === 'Europe')
 
+  const sortedEuropeanCountries = europeanCountries.sort((a, b) => a.label.localeCompare(b.label))
+  
   return (
     <>
       <section className="w-3/5 mx-auto pb-8">
@@ -50,7 +52,7 @@ export default function AddressRoute({params}: {params: {id: string}}) {
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Countries</SelectLabel>
-                   {sortedCountries.map((country) => (
+                   {sortedEuropeanCountries.map((country) => (
                     <SelectItem key={country.value} value={country.value}>
                       {country.flag} - {country.label} / {country.region}
                     </SelectItem>

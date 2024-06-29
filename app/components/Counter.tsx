@@ -10,7 +10,7 @@ type Props = {
   name: string
 }
 
-export const Counter = ({ name } : Props) => {
+export function Counter ({ name } : Props) {
   const [amount, setAmount] = useState(0)
 
   const increase = () => setAmount(amount + 1)

@@ -8,7 +8,7 @@ import { Card, CardHeader } from "@/components/ui/card"
 
 import { categoryItems } from "@/app/lib/categoryItems"
 
-export const SelectCategory = () => {
+export function SelectCategory() {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined)
 
   return (

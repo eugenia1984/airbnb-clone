@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
 import { categoryItems } from "@/app/lib/categoryItems"
 
 
-export const MapFilterItems = () => {
+export function MapFilterItems() {
   const searchParams = useSearchParams()
   const search = searchParams.get('filter')
   const pathName = usePathname()

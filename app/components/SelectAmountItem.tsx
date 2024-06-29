@@ -1,4 +1,4 @@
-import { Counter } from "@/app/components"
+import { Counter } from "./Counter"
 
 type Props = {
   title: string
@@ -6,7 +6,7 @@ type Props = {
   name: string
 }
 
-export const SelectAmountItem = ({title, placeholder, name }: Props) => {
+export function SelectAmountItem ({title, placeholder, name }: Props) {
   return (
     <div className="flex items-center justify-between">
       <div className="flex flex-col">

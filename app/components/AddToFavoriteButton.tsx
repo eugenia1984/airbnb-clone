@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 import { Loader2, Heart } from "lucide-react"
 
-export const AddToFavoriteButton = () => {
+export function AddToFavoriteButton() {
   const { pending } = useFormStatus()
 
   return (

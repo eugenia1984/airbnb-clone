@@ -1,10 +1,10 @@
-"use server";
+"use server"
 
 import { redirect } from "next/navigation"
+import { revalidatePath } from "next/cache"
 
 import prisma from "./lib/db"
 import { supabase } from "./lib/supabase"
-import { revalidatePath } from "next/cache";
 
 export async function createAirbnbCloneHome({ userId }: { userId: string }) {
   const data = await prisma.home.findFirst({
@@ -139,7 +139,7 @@ export async function addToFavorite(formData: FormData) {
   revalidatePath(pathName)
 }
 
-export async function DeleteFromFavorite(formData: FormData) {
+export async function deleteFromFavorite(formData: FormData) {
   const favoriteId = formData.get("favoriteId") as string;
   const pathName = formData.get("pathName") as string;
   const userId = formData.get("userId") as string;

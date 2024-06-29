@@ -1,6 +1,6 @@
 import { Skeleton } from "@/components/ui/skeleton"
 
-export const SkeltonCard = () => {
+export function SkeltonCard() {
   return (
     <section className="flex flex-col space-y-3">
       <Skeleton className="h-72 w-full rounded-lg" />

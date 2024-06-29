@@ -1,15 +1,12 @@
 import { Suspense } from "react"
 
-import { 
-  ListingCard, 
-  MapFilterItems, 
-  NoItems, 
-  SkeletonLoading 
-} from "@/app/components"
-
 import prisma from "./lib/db"
 
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
+import { SkeletonLoading } from "./components/SkeletonLoading"
+import { NoItems } from "./components/NoItems"
+import { MapFilterItems } from "./components/MapFilterItems"
+import { ListingCard } from "./components/ListingCard"
 
 async function getData({
   searchParams,
@@ -88,6 +85,7 @@ async function ShowItems({
               favoriteId={item.Favorite[0]?.id}
               isInFavoriteList={item.Favorite.length > 0 ? true : false }
               homeId={item.id}
+              pathName="/"
             />
           ))}
         </div >)

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 import { Loader2 } from "lucide-react"
 
-export const CreationSubmit = () => {
+export function CreationSubmit() {
   const { pending } = useFormStatus()
 
   return (

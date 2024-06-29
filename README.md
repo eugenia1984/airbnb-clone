@@ -18,7 +18,13 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ✔️ Full responsiveness
 
-✔️ Landing page
+✔️ Sign in page with Kindle
+
+✔️ Landing page with the list of the houses for rent
+
+✔️ Add your house for rent
+
+✔️ Add / Delete favorite house for rent
 
 
 ---

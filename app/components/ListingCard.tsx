@@ -2,9 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { useCountries } from "@/app/lib/getCountries"
-import { DeleteFromFavorite, addToFavorite  } from "@/app/actions"
+import { deleteFromFavorite, addToFavorite  } from "@/app/actions"
 
-import { AddToFavoriteButton, DeleteFromFavoriteButton } from "@/app/components"
+import { AddToFavoriteButton } from "./AddToFavoriteButton"
+import { DeleteFromFavoriteButton } from "./DeleteFromFavoriteButton"
 
 interface Props {
   imagePath: string
@@ -18,7 +19,7 @@ interface Props {
   pathName: string
 }
 
-export const ListingCard = ({
+export function ListingCard({
   description,
   imagePath,
   location,
@@ -28,7 +29,7 @@ export const ListingCard = ({
   homeId,
   isInFavoriteList,
   pathName,
-}: Props) => {
+}: Props) {
   const { getCountryByValue } = useCountries()
   const country = getCountryByValue(location)
 
@@ -47,7 +48,7 @@ export const ListingCard = ({
         {userId && (
           <div className="z-10 absolute top-2 right-2">
             {isInFavoriteList ? (
-              <form action={DeleteFromFavorite}>
+              <form action={deleteFromFavorite}>
                 <input type="hidden" name="favoriteId" value={favoriteId} />
                 <input type="hidden" name="userId" value={userId} />
                 <input type="hidden" name="pathName" value={pathName} />

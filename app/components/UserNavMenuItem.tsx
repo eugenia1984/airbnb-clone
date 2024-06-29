@@ -3,11 +3,11 @@ import React from "react"
 import { DropdownMenuItem } from "@/components/ui/dropdown-menu"
 
 
-type UserNavMenuItemProps = {
+type Props = {
   children: React.ReactElement
 }
 
-export const UserNavMenuItem = ({ children }: UserNavMenuItemProps) => {
+export function UserNavMenuItem ({ children }: Props) {
   return (
     <DropdownMenuItem>
       {children}

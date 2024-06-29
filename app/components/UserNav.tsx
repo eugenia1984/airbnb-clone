@@ -18,9 +18,9 @@ import {
   BookCheck
 } from "lucide-react"
 
-import { UserNavMenuItem, UserNavMenuItemWithLink } from "@/app/components"
-
 import { createAirbnbCloneHome } from "../actions"
+import { UserNavMenuItemWithLink } from "./UserNavMenuItemWithLink"
+import { UserNavMenuItem } from "./UserNavMenuItem"
 
 export async function UserNav() {
   const { getUser } = getKindeServerSession()

@@ -3,9 +3,10 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader } from "@/components/ui/card"
 
-import { HeadlineH2, SelectAmountItem, CreationButton} from "@/app/components"
-
 import { createDescription } from "@/app/actions"
+import { HeadlineH2 } from "@/app/components/HeadlineH2"
+import { SelectAmountItem } from "@/app/components/SelectAmountItem"
+import { CreationButton } from "@/app/components/CreationButton"
 
 export default function DescriptionPage ({
   params

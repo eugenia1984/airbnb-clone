@@ -10,7 +10,7 @@ type Props = {
   icon: React.ReactElement
 }
 
-export  const UserNavMenuItemWithLink = ({ href, text, icon }: Props) => {
+export  function UserNavMenuItemWithLink ({ href, text, icon }: Props) {
   return (
     <DropdownMenuItem>
       <Link href={href} className="w-full flex gap-x-2 items-center hover:text-green-600" >

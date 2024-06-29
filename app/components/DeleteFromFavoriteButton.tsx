@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 import { Loader2, Heart } from "lucide-react"
 
-export const DeleteFromFavoriteButton = () => {
+export function DeleteFromFavoriteButton() {
   const { pending } = useFormStatus()
 
   return (
@@ -27,7 +27,7 @@ export const DeleteFromFavoriteButton = () => {
           className="bg-primary-foreground"
           type="submit"
         >
-          <Heart className="w-4 h-4 text-primary" fill="#E21C49" />
+          <Heart className="w-4 h-4 text-primary" fill="#3BA60D" />
         </Button>
       )}
     </>
