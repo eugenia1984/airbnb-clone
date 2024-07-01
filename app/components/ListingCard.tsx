@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { useCountries } from "@/app/lib/getCountries"
-import { deleteFromFavorite, addToFavorite  } from "@/app/actions"
+import { deleteFromFavorite, addToFavorite } from "@/app/actions"
 
 import { AddToFavoriteButton } from "./AddToFavoriteButton"
 import { DeleteFromFavoriteButton } from "./DeleteFromFavoriteButton"
@@ -41,7 +41,7 @@ export function ListingCard({
           alt="Image of House"
           fill
           sizes="288"
-          priority={false} 
+          priority={false}
           className="rounded-lg h-full object-cover"
         />
 
@@ -69,8 +69,8 @@ export function ListingCard({
         <h3 className="font-medium text-base">
           {country?.flag} - {country?.label} / {country?.region}
         </h3>
-        <p className="text-muted-foreground text-sm line-clamp-2">
-          {description}
+        <p className="text-muted-foreground text-sm line-clamp-3 tooltip">
+            {description}
         </p>
         <p className="pt-2 text-muted-foreground">
           <span className="font-medium text-black">EUR {price}</span> per Night
