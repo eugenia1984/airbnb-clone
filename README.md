@@ -18,14 +18,21 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ✔️ Full responsiveness
 
-✔️ Sign in page with Kindle
+✔️ "Sign in page" with Kindle
 
-✔️ Landing page with the list of the houses for rent
+✔️ "Landing page" with the list of the houses for rent
 
-✔️ Add your house for rent
+✔️ "Favorite page" where you can see your favorites Homes.
 
-✔️ Add / Delete favorite house for rent
+✔️ "Listing page" with all the Home you had added.
 
+✔️ "Detail page", a detail of the Home by the id.
+
+✔️ Functionality:
+
+-Add your house for rent
+
+-Add / Delete favorite house for rent
 
 ---
 
