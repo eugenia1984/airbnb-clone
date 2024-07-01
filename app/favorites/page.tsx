@@ -44,7 +44,7 @@ export default async function FavoriteRoute() {
         data.length === 0 ?
           <NoItems />
           :
-          (<div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2">
+          (<div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8">
             {data.map((item) => <ListingCard
               key={item.Home?.id}
               description={item.Home?.description as string}
