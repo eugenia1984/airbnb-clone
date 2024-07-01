@@ -70,7 +70,7 @@ export function ListingCard({
           {country?.flag} - {country?.label} / {country?.region}
         </h3>
         <p className="text-muted-foreground text-sm line-clamp-3 tooltip">
-            {description}
+          {description}
         </p>
         <p className="pt-2 text-muted-foreground">
           <span className="font-medium text-black">EUR {price}</span> per Night

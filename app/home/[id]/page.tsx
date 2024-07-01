@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image"
+import Link from "next/link"
+
 import prisma from "@/app/lib/db"
 
-import Image from "next/image"
-
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
+
+import { createReservation } from "@/app/actions"
 
 import { useCountries } from "@/app/lib/getCountries"
 
@@ -13,6 +16,8 @@ import { HeadlineH2 } from "@/app/components/HeadlineH2"
 import { CategoryShowcase } from "@/app/components/CategoryShowcase"
 import { HomeMap } from "@/app/components/HomeMap"
 import { SelectCalendar } from "@/app/components/SelectCalendar"
+import { Button } from "@/components/ui/button"
+import { ReservationSubmitButton } from "@/app/components/ReservationSubmitButton"
 
 async function getData(homeId: string) {
   const data = await prisma.home.findUnique({
@@ -21,6 +26,7 @@ async function getData(homeId: string) {
     },
     select: {
       photo: true,
+      description: true,
       guest: true,
       bedrooms: true,
       bathrooms: true,
@@ -28,7 +34,11 @@ async function getData(homeId: string) {
       categoryName: true,
       price: true,
       country: true,
-      description: true,
+      Reservation: {
+        where: {
+          homeId: homeId
+        }
+      },
       User: {
         select: {
           profileImage: true,
@@ -50,9 +60,9 @@ export default async function HomeRoute({ params }: { params: { id: string } }) 
   const user = await getUser()
 
   return (
-    <section className="w-[90%] md:w-[75%] mx-auto my-10">
+    <section className="w-[75%] mx-auto my-10">
       <HeadlineH2 text={data?.title ?? ''} />
-      <section className="relative h-[550px] mt-10">
+      <section className="relative h-[120px] md:h-[520px] mt-10">
         <Image
           alt="image of a home"
           src={`https://cxkkdrskuecnodukdobx.supabase.co/storage/v1/object/public/images/${data?.photo}`}
@@ -60,7 +70,7 @@ export default async function HomeRoute({ params }: { params: { id: string } }) 
           className="rounded-lg h-full object-cover w-full"
         />
       </section>
-      <section className="flex justify-between gap-x-24 mt-8">
+      <section className="flex flex-col lg:flex-row justify-between gap-x-12 mt-8">
         <section className="w-3/4">
           <h3 className="text-3xl">
             {country?.flag} - {country?.label} / {country?.region}
@@ -95,10 +105,19 @@ export default async function HomeRoute({ params }: { params: { id: string } }) 
           <Separator className="my-6" />
           <HomeMap locationValue={country?.value as string} />
         </section>
-        <form>
+        <form action={createReservation} className="flex flex-col items-start">
           <input type="hidden" name="homeId" value={params.id} />
-          <input type="hidden" name="homeId" value={user?.id} />
-          <SelectCalendar />
+          <input type="hidden" name="userId" value={user?.id} />
+          <SelectCalendar reservation={data?.Reservation}/>
+          {user?.id ? (
+            <ReservationSubmitButton />
+            ) : (
+              <Button className="w-[260px] mx-auto mt-3" asChild>
+                <Link href="/api/auth/login">
+                  Make a reservation
+                </Link>
+              </Button>
+            )}
         </form>
       </section>
     </section>
