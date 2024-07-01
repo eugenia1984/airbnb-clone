@@ -26,13 +26,17 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 ✔️ "Listing page" with all the Home you had added.
 
-✔️ "Detail page", a detail of the Home by the id.
+✔️ "Reservation page" with all the Home you had reserved.
+
+✔️ "Detail page", a detail of the Home by the id with a calendar to make a reservation (with the date already reserved disabled).
 
 ✔️ Functionality:
 
--Add your house for rent
+-Add your Home for rent
 
--Add / Delete favorite house for rent
+-Add / Delete favorite Home for rent
+
+-Make a reservation
 
 ---
 
