@@ -45,7 +45,10 @@ export default function AddressRoute({params}: {params: {id: string}}) {
         <input type="hidden" name="countryValue" value={locationValue} />
         <div className="w-3/5 mx-auto mb-36">
           <div className="mb-5">
-            <Select required onValueChange={(value) => setLocationValue(value) }>
+            <Select 
+              required 
+              onValueChange={(value) => setLocationValue(value) }
+            >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a country" />
               </SelectTrigger>
