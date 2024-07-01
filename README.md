@@ -45,6 +45,8 @@ This is a project in [Next.js](https://nextjs.org/) with [`create-next-app`](htt
 
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/tailwindcss.png" alt="tailwindcss"/> **Tailwindcss**](https://tailwindcss.com/), [**shadcn UI**](https://ui.shadcn.com/) -for UI components- and [**Lucide**](https://lucide.dev/) -for icons-.
 
+- [**React Date Range**](https://hypeserver.github.io/react-date-range/) for the calendars to make a reservation.
+
 - [<img width="30" height="30" src="https://img.icons8.com/color/30/eslint.png" alt="eslint"/> **ESLint**](https://eslint.org/)
 
 - [**Kinde**](https://kinde.com/) - auth for modern applications
