@@ -5,9 +5,11 @@ import Image from "next/image"
 
 import { useCountries } from "@/app/lib/getCountries"
 
-import { HeadlineH2 } from "@/app/components/HeadlineH2"
 import { Separator } from "@/components/ui/separator"
+
+import { HeadlineH2 } from "@/app/components/HeadlineH2"
 import { CategoryShowcase } from "@/app/components/CategoryShowcase"
+import { HomeMap } from "@/app/components/HomeMap"
 
 async function getData(homeId: string) {
   const data = await prisma.home.findUnique({
@@ -28,7 +30,7 @@ async function getData(homeId: string) {
         select: {
           profileImage: true,
           firstName: true,
-          lastName: true 
+          lastName: true
         }
       }
     }
@@ -59,32 +61,34 @@ export default async function HomeRoute({ params }: { params: { id: string } }) 
             {country?.flag} - {country?.label} / {country?.region}
           </h3>
           <section className="mt-2 w-[260px] md:w-[320px] ">
-            <p className="bg-green-600 text-white p-2"> 
+            <p className="bg-green-600 text-white p-2">
               {data?.guest} Guests - {data?.bedrooms} Bedrooms- {data?.bathrooms} Bathrooms
             </p>
           </section>
           <div className="flex items-center mt-6">
-            <img 
+            <img
               src={
-                data?.User?.profileImage ?? 
+                data?.User?.profileImage ??
                 "https://img.icons8.com/ios-filled/50/user-male-circle.png"
-              } 
-              alt="user profile" 
+              }
+              alt="user profile"
               width={44}
               height={44}
               className="w-11 h-11 rounded-full"
             />
             <section className="flex flex-col ml-4 pb-4">
               <h3 className="font-medium">
-                Hosted by { data?.User?.firstName ?? ''} {data?.User?.lastName ?? ''}
+                Hosted by {data?.User?.firstName ?? ''} {data?.User?.lastName ?? ''}
               </h3>
               <p className="text-small text-muted-foreground">Hosted since 2015</p>
             </section>
           </div>
-          <Separator className="my-6"/>
-          <CategoryShowcase categoryName={data?.categoryName as string}/>
-          <Separator className="my-6"/>
-          <p>{data?.description}</p>
+          <Separator className="my-6" />
+          <CategoryShowcase categoryName={data?.categoryName as string} />
+          <Separator className="my-6" />
+          <p className="text-muted-foreground">{data?.description}</p>
+          <Separator className="my-6" />
+          <HomeMap locationValue={country?.value as string}/>
         </section>
       </section>
     </section>
