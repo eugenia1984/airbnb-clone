@@ -71,7 +71,11 @@ async function ShowItems({
 
   return (
     <>
-      {data.length === 0 ? <NoItems />
+      {data.length === 0 ?
+        <NoItems
+          title=" No listings found for this category"
+          description="Please check another category or create your own listing"
+        />
         :
         (<div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 mt-8">
           {data.map((item) => (
@@ -83,7 +87,7 @@ async function ShowItems({
               price={item.price as number}
               userId={user?.id}
               favoriteId={item.Favorite[0]?.id}
-              isInFavoriteList={item.Favorite.length > 0 ? true : false }
+              isInFavoriteList={item.Favorite.length > 0 ? true : false}
               homeId={item.id}
               pathName="/"
             />

@@ -42,7 +42,10 @@ export default async function FavoriteRoute() {
       <HeadlineH2 text="My favorites" />
       {
         data.length === 0 ?
-          <NoItems />
+          <NoItems 
+            title="No favorites founded"
+            description="Please add some favorites to see them here..."
+          />
           :
           (<div className="mt-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8">
             {data.map((item) => <ListingCard
