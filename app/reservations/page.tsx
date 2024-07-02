@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { redirect } from "next/navigation"
 
 import prisma from "../lib/db"
@@ -32,6 +33,10 @@ async function getData(userId: string) {
   })
 
   return data
+}
+
+export const metadata: Metadata = {
+  title: 'Reservations',
 }
 
 export default async function ReservationsRoute() {

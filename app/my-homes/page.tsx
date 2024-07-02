@@ -1,3 +1,4 @@
+import { Metadata } from "next"
 import { redirect } from "next/navigation"
 
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
@@ -34,6 +35,10 @@ async function getData(userId: string) {
   })
 
   return data
+}
+
+export const metadata: Metadata = {
+  title: 'Homes',
 }
 
 export default async function MyHomes() {

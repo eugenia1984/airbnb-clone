@@ -65,14 +65,17 @@ export function ListingCard({
           </div>
         )}
       </div>
-      <Link href={`/home/${homeId}`} className="px-2 py-3 border border-t-0 rounded-b-xl border-green-600">
-        <h3 className="font-medium text-base">
+      <Link 
+        href={`/home/${homeId}`} 
+        className="px-2 py-3 border border-t-0 rounded-b-xl border-green-600/70 bg-green-600/10"
+      >
+        <h3 className="font-medium text-base pb-2">
           {country?.flag} - {country?.label} / {country?.region}
         </h3>
         <p className="text-muted-foreground text-sm line-clamp-3 tooltip">
           {description}
         </p>
-        <p className="pt-2 text-muted-foreground">
+        <p className="pt-2 text-muted-foreground pb-1">
           <span className="font-medium text-black">EUR {price}</span> per Night
         </p>
       </Link>

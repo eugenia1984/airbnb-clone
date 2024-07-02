@@ -57,17 +57,19 @@ export function SearchModal() {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="rounded-full py-2 px-5 border flex items-center cursor-pointer">
-          <div className="flex h-full divide-x font-medium">
-            <p className="px-4">Anywhere</p>
-            <p className="px-4">Any Week</p>
+        <div className="rounded-full py-2 px-4 border flex items-center cursor-pointer gap-x-2">
+          <div className="flex flex-col h-full font-medium px-2 py-1 rounded-full hover:bg-green-600/15">
+            <p className="px-4">Where</p>
+            <p className="text-muted-foreground">Search destination</p>
           </div>
-          <Search className="bg-primary text-white p-2 h-8 w-8 rounded-full" />
+          <div>
+            <Search className="bg-primary text-white p-2 h-8 w-8 rounded-full" />
+          </div>
         </div>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <form className="flex flex-col gap-3">
-          <input type="hidden" name="country" value={locationValue}/>
+          <input type="hidden" name="country" value={locationValue} />
           {step === 1 ? (
             <>
               <DialogHeader>
