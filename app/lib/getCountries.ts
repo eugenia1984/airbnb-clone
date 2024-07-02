@@ -14,9 +14,9 @@ export const useCountries = () => {
   const getCountryByValue = (value: string) => {
     return countriesFormatted.find((item) => item.value === value);
   };
-
+    
   return {
     getAllCountries,
-    getCountryByValue,
+    getCountryByValue
   };
 };
