@@ -42,7 +42,7 @@ export function ListingCard({
           fill
           sizes="288"
           priority={false}
-          className="rounded-lg h-full object-cover"
+          className="rounded-t-lg h-full object-cover"
         />
 
         {userId && (
@@ -65,7 +65,7 @@ export function ListingCard({
           </div>
         )}
       </div>
-      <Link href={`/home/${homeId}`} className="mt-2">
+      <Link href={`/home/${homeId}`} className="px-2 py-3 border border-t-0 rounded-b-xl border-green-600">
         <h3 className="font-medium text-base">
           {country?.flag} - {country?.label} / {country?.region}
         </h3>

@@ -61,7 +61,6 @@ export function SearchModal() {
           <div className="flex h-full divide-x font-medium">
             <p className="px-4">Anywhere</p>
             <p className="px-4">Any Week</p>
-            <p className="px-4">Add Guest</p>
           </div>
           <Search className="bg-primary text-white p-2 h-8 w-8 rounded-full" />
         </div>
