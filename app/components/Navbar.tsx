@@ -15,7 +15,7 @@ export function Navbar() {
             <Image
               src={DesktopLogo}
               alt="Airbnb logo for desktop"
-              className="w-14 hidden lg:block"
+              className="w-12 hidden lg:block"
             />
             <span className="w-22 hidden lg:block text-green-600 uppercase font-bold tracking-wide">
               Airbnb-Clone
@@ -23,7 +23,7 @@ export function Navbar() {
             <Image
               src={MobileLogo}
               alt="Airbnb logo for desktop"
-              className="w-10 block lg:hidden"
+              className="w-8 block lg:hidden"
             />
           </div>
         </Link>

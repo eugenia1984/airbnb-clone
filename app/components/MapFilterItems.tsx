@@ -25,7 +25,7 @@ export function MapFilterItems() {
   )
 
   return (
-    <section className="flex gap-x-10 mt-5 w-full overflow-x-scroll no-scrollbar" >
+    <section className="flex gap-x-10 mt-5 w-full overflow-x-scroll no-scrollbar justify-center" >
       {categoryItems.map((category) => (
         <Link
           key={category.id} href={`${pathName}?${createQueryString('filter', category.name)}`}
