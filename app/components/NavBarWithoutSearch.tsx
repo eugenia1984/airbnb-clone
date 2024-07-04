@@ -4,9 +4,8 @@ import Image from "next/image"
 import DesktopLogo from "../../public/logo-96.png"
 import MobileLogo from "../../public/logo-48.png"
 import { UserNav } from "./UserNav"
-import { SearchModal } from "./SearchModal"
 
-export function Navbar() {
+export function NavbarWithoutSearch() {
 
   return (
     <nav className="w-full border-b">
@@ -28,7 +27,6 @@ export function Navbar() {
             />
           </div>
         </Link>
-        <SearchModal />
         <UserNav />
       </section>
     </nav>

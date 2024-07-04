@@ -6,7 +6,7 @@ import { SelectCategory } from "@/app/components/SelectCategory"
 export default function StructureRoute({params}: {params: {id: string}}) {
   return (
     <>
-      <section className="w-3/5 mx-auto pb-8">
+      <section className="w-3/5 mx-auto pb-8 mt-10">
         <HeadlineH2 text="Which of these best describe your Home?" />
       </section>
       <form action={createCategoryPage}>

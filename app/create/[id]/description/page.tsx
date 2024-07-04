@@ -15,7 +15,7 @@ export default function DescriptionPage ({
 }) {
   return(
     <>
-      <section className="w-3/5 mx-auto pb-8">
+      <section className="w-3/5 mx-auto pb-8 mt-10">
         <HeadlineH2 text="Please describe your home"/>
       </section>
       <form action={createDescription}>

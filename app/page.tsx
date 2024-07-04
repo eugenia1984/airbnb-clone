@@ -7,6 +7,7 @@ import { SkeletonLoading } from "./components/SkeletonLoading"
 import { NoItems } from "./components/NoItems"
 import { MapFilterItems } from "./components/MapFilterItems"
 import { ListingCard } from "./components/ListingCard"
+import { Navbar } from "./components/Navbar"
 
 async function getData({
   searchParams,
@@ -62,6 +63,7 @@ export default function Home({
 }) {
   return (
     <div className="container mx-auto px-5 lg:px-10 py-5" >
+      <Navbar />
       <MapFilterItems />
       <Suspense key={searchParams?.filter} fallback={<SkeletonLoading />} >
         <ShowItems searchParams={searchParams} />
