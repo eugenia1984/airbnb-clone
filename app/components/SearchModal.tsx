@@ -39,7 +39,7 @@ export function SearchModal() {
   const sortedEuropeanCountries = europeanCountries.sort((a, b) => a.label.localeCompare(b.label))
 
   return (
-    <div className="rounded-full border flex items-center gap-x-2">
+    <div className="rounded-full border flex items-center gap-x-2 shadow-md">
       <Dialog>
         <DialogTrigger>
           <SearchModalButton title="Where" description="Search destination" />

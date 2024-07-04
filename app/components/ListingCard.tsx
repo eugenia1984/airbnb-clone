@@ -34,7 +34,7 @@ export function ListingCard({
   const country = getCountryByValue(location)
 
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col shadow-lg hover:shadow-2xl">
       <div className="relative h-72">
         <Image
           src={`https://cxkkdrskuecnodukdobx.supabase.co/storage/v1/object/public/images/${imagePath}`}

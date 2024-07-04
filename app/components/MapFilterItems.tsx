@@ -46,7 +46,7 @@ export function MapFilterItems() {
               height={24}
             />
           </div>
-          <p className="text-xs font-medium">
+          <p className="text-xs font-medium hover:text-green-800 hover:font-bold">
             {category.title}
           </p>
         </Link>
